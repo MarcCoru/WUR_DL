@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main  # Change this to your main branch name, if different
+
+jobs:
+  test:
+    runs-on: ubuntu-latest  # You can choose a different OS if needed
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+
+    - name: Run make setup
+      run: make setup
+
+    - name: Run make tests
+      run: make tests

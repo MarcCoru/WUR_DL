@@ -1,0 +1,4 @@
+venv
+.idea
+compiled_solutions/*.pdf
+.DS_Store
