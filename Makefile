@@ -32,11 +32,8 @@ cleanup:
 	$(VENV_DIR)/bin/python scripts/remove_outputs.py
 	rm -rf exercises/*.ipynb
 	rm -rf __pycache__
-	rm -rf solutions/yield_data # data W1
-	rm -rf solutions/rs_data # data W2
-	rm -rf solutions/data # data W3
-	rm -rf solutions/*.tif solutions/*.csv # data W2
-	rm -rf solutions/sample_data solutions/diabetes-data # data W2L3ab
+	rm -rf solutions/data
+	rm -rf solutions/ipynb_checkpoints
 
 	$(VENV_DIR)/bin/python scripts/print_notebook_sizes.py
 

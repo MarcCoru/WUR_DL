@@ -11,3 +11,4 @@ jupyter
 pylint
 nbqa
 Pyarrow
+d2l

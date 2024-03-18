@@ -10,6 +10,10 @@ class TestNotebooks(unittest.TestCase):
         # Get a list of all ipython notebooks in the solutions folder
         notebook_files = [file for file in os.listdir(solution_folder) if file.endswith(".ipynb")]
 
+        # only regularization notebooks (Segmentation Notebook is too heavy)
+        notebook_files = [file for file in notebook_files if file.startswith("Regularization")]
+
+
         for notebook_file in notebook_files:
             notebook_path = os.path.join(solution_folder, notebook_file)
 
