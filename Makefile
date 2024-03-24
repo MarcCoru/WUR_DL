@@ -33,7 +33,11 @@ cleanup:
 	rm -rf exercises/*.ipynb
 	rm -rf __pycache__
 	rm -rf solutions/data
-	rm -rf solutions/ipynb_checkpoints
+	rm -rf solutions/*.npz
+	rm -rf solutions/*.jpg
+	rm -rf solutions/*.png
+	rm -rf solutions/*.txt
+	rm -rf solutions/.ipynb_checkpoints
 
 	$(VENV_DIR)/bin/python scripts/print_notebook_sizes.py
 
