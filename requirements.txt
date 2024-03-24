@@ -1,5 +1,6 @@
 pandas
 torch
+torchvision
 geopandas
 matplotlib
 seaborn
